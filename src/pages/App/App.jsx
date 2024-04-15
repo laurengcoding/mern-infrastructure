@@ -1,6 +1,9 @@
 import AuthPage from '../AuthPage/AuthPage';
 import RhythmicDictationPage from '../RhythmicDictationPage/RhythmicDictationPage';
 import MyLearningPage from '../MyLearningPage/MyLearningPage';
+import GetStarted from '../../components/GetStarted';
+import AboutUs from '../../components/AboutUs';
+
 import './App.css'
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
@@ -13,6 +16,7 @@ function App() {
 
   return (
     <main>
+      <div>
       {
         user ? 
         <>
@@ -25,6 +29,18 @@ function App() {
         :
         <AuthPage setUser={setUser} />
       }
+      </div>
+      <section class="main-display">
+        <h1 class="main-heading">Music 1 Hub</h1>
+
+        <div class="main-subtitle">
+          <h3 className="subtitle-text">Master Music Theory</h3>
+          <h3 className="subtitle-text">Develop Your Aural Skills</h3>
+          <h3 className="subtitle-text">Blitz the HSC</h3>
+        </div>
+      </section>
+      <GetStarted />
+      <AboutUs />
     </main>
   );
 }
