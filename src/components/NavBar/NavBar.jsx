@@ -10,7 +10,7 @@ export default function NavBar({ user, setUser }) {
     }
 
     return (
-        <nav>
+        <nav className="bg-blue">
             <Link to="/">About</Link>
             {/* &nbsp; | &nbsp; */}
             <Link to="/learn">Learn</Link>

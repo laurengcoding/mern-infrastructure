@@ -15,7 +15,7 @@ function App() {
   const [user, setUser] = useState(getUser());
 
   return (
-    <main>
+    <main className="m-5">
       <div>
       {
         user ? 
@@ -30,10 +30,10 @@ function App() {
         <AuthPage setUser={setUser} />
       }
       </div>
-      <section class="main-display">
-        <h1 class="main-heading">Music 1 Hub</h1>
+      <section className="flex-col justify-center content-center bg-[url('./img/instruments.jpg')] bg-cover bg-no-repeat py-20">
+        <h1 className="text-2xl font-bold pt-4 pb-14">Music 1 Hub</h1>
 
-        <div class="main-subtitle">
+        <div className="bg-slate-50/50">
           <h3 className="subtitle-text">Master Music Theory</h3>
           <h3 className="subtitle-text">Develop Your Aural Skills</h3>
           <h3 className="subtitle-text">Blitz the HSC</h3>
