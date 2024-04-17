@@ -2,25 +2,30 @@ import audio from "./assets/audio/simple_44.mp3"
 
 export const notes = [
     {
-        'name': 'semiquaver',
-        'value': 0.25
+        name: 'semiquaver',
+        key: 'SQu',
+        value: 0.25
     },
     {
-        'name': 'quaver',
-        'value': 0.5,
+        name: 'quaver',
+        key: 'Qu',
+        value: 0.5,
     },
     {
-        'name': 'crotchet',
-        'value': 1,
+        name: 'crotchet',
+        key: 'Cr',
+        value: 1,
         // TODO: add 'symbol' key with img link value
     },
     {
-        'name': 'minim',
-        'value': 2,
+        name: 'minim',
+        key: 'Mi',
+        value: 2,
     },
     {
-        'name': 'semibreve',
-        'value': 4,
+        name: 'semibreve',
+        key: 'SBr',
+        value: 4,
     }
 ]
 
