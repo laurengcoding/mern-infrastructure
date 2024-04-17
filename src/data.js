@@ -1,3 +1,5 @@
+import audio from "./assets/audio/simple_44.mp3"
+
 export const notes = [
     {
         'name': 'semiquaver',
@@ -22,6 +24,13 @@ export const notes = [
     }
 ]
 
-// export const exercise = [
-
-// ]
+export const audioExercises = [
+    {
+        file: audio,
+        name: 'Simple 4/4 Rhythm',
+    },
+    {
+        file: '/src/assets/audio/test_2.mp3',
+        name: 'Simple 4/4 test',
+    },
+]
