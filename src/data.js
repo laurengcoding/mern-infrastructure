@@ -4,28 +4,32 @@ export const notes = [
     {
         name: 'semiquaver',
         key: 'SQu',
-        value: 0.25
+        value: 0.25,
+        noteImg: '/img/semiquaver.jpg'
     },
     {
         name: 'quaver',
         key: 'Qu',
         value: 0.5,
+        noteImg: '/img/quaver.jpg'
     },
     {
         name: 'crotchet',
         key: 'Cr',
         value: 1,
-        // TODO: add 'symbol' key with img link value
+        noteImg: "/img/crotchet.png"
     },
     {
         name: 'minim',
         key: 'Mi',
         value: 2,
+        noteImg: '/img/minim.jpg'
     },
     {
         name: 'semibreve',
         key: 'SBr',
         value: 4,
+        noteImg: '/img/semibreve.png'
     }
 ]
 
