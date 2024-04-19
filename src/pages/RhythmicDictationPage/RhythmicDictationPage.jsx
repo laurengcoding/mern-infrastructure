@@ -8,14 +8,18 @@ import { notes } from "../../data"
 export default function RhythmicDictationPage() {
 
     const [rhythmAnswer, setRhythmAnswer] = useState([]);
+    const [audioKey, setAudioKey] = useState([]);
 
     function addNoteToState(noteBtnPressed) {
         setRhythmAnswer([...rhythmAnswer, noteBtnPressed]);
     };
 
-    // function addRhythmAnswer(rhythmAnswer) {
-       // setRhythmAnswer([...rhythmAnswer, rhythmAnswer])
+    // function getAudioKey(key) {
+    //     setAudioKey([...audioKey, key]);
     // }
+
+    
+    // TODO: function to capture 'key' value of selected audio in <AudioExercise />
 
     return (
         <div>

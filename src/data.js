@@ -5,13 +5,13 @@ export const notes = [
         name: 'semiquaver',
         key: 'SQu',
         value: 0.25,
-        noteImg: '/img/semiquaver.jpg'
+        noteImg: '/img/semiquaver.png'
     },
     {
         name: 'quaver',
         key: 'Qu',
         value: 0.5,
-        noteImg: '/img/quaver.jpg'
+        noteImg: '/img/quaver.png'
     },
     {
         name: 'crotchet',
@@ -23,7 +23,7 @@ export const notes = [
         name: 'minim',
         key: 'Mi',
         value: 2,
-        noteImg: '/img/minim.jpg'
+        noteImg: '/img/minim.png'
     },
     {
         name: 'semibreve',
@@ -37,6 +37,7 @@ export const audioExercises = [
     {
         file: audio,
         name: 'Simple 4/4 Rhythm',
+        key: ["Cr", "Cr", "Qu", "Qu", "Qu", "Qu", "Squ", "Squ", "Squ", "Squ", "Mi", "Cr"]
     },
     {
         file: '/src/assets/audio/test_2.mp3',

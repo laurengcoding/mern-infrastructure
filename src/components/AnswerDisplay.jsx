@@ -1,7 +1,6 @@
 
 export default function AnswerDisplay({addNote, _handleSubmit}) {
-    console.log(addNote);
- 
+
         // const renderToStave = addNote.map((note) => {
         //     return (
         //         <div>

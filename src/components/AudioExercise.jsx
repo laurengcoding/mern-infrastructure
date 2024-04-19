@@ -1,7 +1,7 @@
 import { audioExercises } from "../data"
 import { useState, useEffect } from 'react';
 
-export default function AudioExercise() {
+export default function AudioExercise({  }) {
     
 const [currentExercise, setCurrentExercise] = useState(null);
 
@@ -15,7 +15,8 @@ useEffect(() => {
     selectClip();
 }, []);
 
-console.log(currentExercise);
+// console.log(currentExercise.key);
+
 
     return (
         <div>
