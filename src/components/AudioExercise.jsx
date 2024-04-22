@@ -1,22 +1,23 @@
 import { audioExercises } from "../data"
 import { useState, useEffect } from 'react';
 
-export default function AudioExercise({  }) {
+export default function AudioExercise({ audioKey, setAudioKey }) {
     
-const [currentExercise, setCurrentExercise] = useState(null);
+    const [currentExercise, setCurrentExercise] = useState(null);
 
-function selectClip() {
-    const randomIndex = Math.floor(Math.random() * audioExercises.length);
-    const randomExercise = audioExercises[randomIndex];
-    setCurrentExercise(randomExercise);
-}
+    // Select a random clip
+    function selectClip() {
+        const randomIndex = Math.floor(Math.random() * audioExercises.length);
+        const randomExercise = audioExercises[randomIndex];
+        setCurrentExercise(randomExercise);
+        return randomExercise;
+    }
 
-useEffect(() => {
-    selectClip();
-}, []);
-
-// console.log(currentExercise.key);
-
+    // Load random clip on page render
+    useEffect(() => {
+        const { key } = selectClip();
+        setAudioKey(key);
+    }, []);
 
     return (
         <div>

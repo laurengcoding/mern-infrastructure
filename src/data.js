@@ -35,12 +35,13 @@ export const notes = [
 
 export const audioExercises = [
     {
-        file: audio,
-        name: 'Simple 4/4 Rhythm',
-        key: ["Cr", "Cr", "Qu", "Qu", "Qu", "Qu", "Squ", "Squ", "Squ", "Squ", "Mi", "Cr"]
+        file: '/src/assets/audio/simple_44.mp3',
+        name: '4/4 Rhythm',
+        key: ["Cr", "Cr", "Qu", "Qu", "Qu", "Qu", "SQu", "SQu", "SQu", "SQu", "Mi", "Cr"]
     },
     {
         file: '/src/assets/audio/test_2.mp3',
         name: 'Simple 4/4 test',
+        key: ["Cr", "Qu"]
     },
 ]
