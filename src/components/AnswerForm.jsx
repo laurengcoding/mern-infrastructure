@@ -49,25 +49,33 @@ export default function AnswerForm({ addAnswerToState, clearAnswer }) {
     }
 
     return (
-        <div>
-        <section className="flex items-center justify-center bg-cover bg-center h-24 bg-[url('/img/percussion-staff.png')]">
-                <div className=" w-10/12 grid grid-cols-12">
+        <div className="w-screen ">
+            <section className="flex items-center justify-center h-60 bg-contain bg-no-repeat bg-center bg-[url('/img/percussion-staff.png')]">
+                <div className=" w-11/12 grid grid-cols-12">
                   { addedNote.map((note, index) => (
-                    <img key={index} src={note.noteImg} alt={note.name} className="object-cover" /> 
+                    <img key={index} src={note.noteImg} alt={note.name} className="object-cover size-40 pb-6" /> 
                   )) }
                 </div>
-
             </section>
-            <h1>AnswerForm</h1>
+            
+            <div className="bg-amber-50 pt-10 border-t-2 border-t-amber-100" >
+            <section className="flex justify-center align-center ">
+                <h3 className="border-2 border-rose-300 bg-red-50 px-10 py-2" >Notate the rhythmic ostinato by clicking the note buttons below</h3>
+            </section>
+            
             <form onSubmit={_handleSubmit} >
-                <div>
-                    <div className="flex flex-row space-x-5">{ noteBtns }</div>
+                <div className="mt-4 " >
+                    <div className="flex flex-row justify-center align-center space-x-5">{ noteBtns }</div>
                 </div>
-                <button type="submit">Submit Answer</button>
-
-                <button type="button"
-                onClick={resetNotes}>Clear Answer</button>
+                <div className="flex flex-row justify-center items-center pt-10 gap-x-2">
+                    <button className="border-2 border-black rounded space-x-5 py-2 px-7 hover:bg-lime-100" type="submit">Submit Answer</button>
+                    <button className="border-2 border-black rounded space-x-5 py-2 px-7 hover:bg-lime-100" type="button"
+                    onClick={resetNotes}>Clear Answer</button>
+                </div>
             </form>
+
+
+            </div>
         </div>
     )
 }

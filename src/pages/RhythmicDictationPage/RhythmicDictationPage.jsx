@@ -39,21 +39,21 @@ export default function RhythmicDictationPage() {
     }
 
     return (
-        <div>
-            <h1>Rhythmic Dictation</h1>
+        <div className="h-dvh flex flex-col justify-center items-center">
+            <h1 className="text-4xl font-bold pb-10" >Rhythmic Dictation</h1>
             <AudioExercise audioKey={audioKey} setAudioKey={setAudioKey} />
             <div>
                 { correctAnswer === true && (
-                    <div>
-                        <p>You got it!</p>
-                        <button>Next Exercise</button> 
+                    <div className="mt-5 border-2 border-green-400 rounded bg-green-300 px-6 py-4">
+                        <p className="font-bold text-center pb-4">You got it!</p>
+                        <form>
+                        <button className="border-2 border-black rounded px-5 py-3 bg-green-100 lg:hover:bg-green-50 hover:font-bold">Next Exercise</button> 
+                        </form>
                     </div> 
                 )}
                 { correctAnswer === false && (
-                    <div>
-                        <p>Try again</p>
-                        <button
-                        onClick={clearAnswer}>Clear Answer</button>
+                    <div className="mt-5 border-2 border-red-400 rounded bg-red-300 px-6 py-4" >
+                        <p className="font-bold">Try again</p>
                     </div>
                 )}
 

@@ -20,12 +20,12 @@ export default function NavBar({ user, setUser }) {
     return (
         <nav className="sticky top-0 h-14 bg-sky-100 flex justify-between items-center z-50">
             <div className="pl-4">
-                Logo
+                -
             </div>
             <div className="hidden lg:flex justify-between text-blue-900 font-bold pr-4">
                 <Link to="/">About</Link>
                 &nbsp;&nbsp;
-                <Link to="/learn">Learn</Link>
+                <Link to="/learn/rhythmicdictation">Learn</Link>
                 &nbsp;&nbsp;
                 <Link to="/resources">Resources</Link>
                 &nbsp;&nbsp;

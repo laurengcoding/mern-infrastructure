@@ -1,7 +1,7 @@
 export default function AboutUs() {
     return (
         <div className="bg-amber-50">
-            <section className="m-7">
+            <section className="m-7 pt-8">
                 <h2 className="text-2xl font-bold py-4">About Us</h2>
                 <p className="leading-6">Welcome to Music 1 Hub - Your Aural Skills Companion!</p>
                 <p className="py-4">At Music 1 Hub, we're dedicated to helping Stage 6 Music 1 students like you excel in aural skills. Our mission is to provide an engaging platform that empowers you to enhance your aural skills at your own pace while having fun!</p>
