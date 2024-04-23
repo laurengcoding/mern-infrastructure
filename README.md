@@ -15,6 +15,8 @@ As adminstrative demands for teachers continue to grow, it is becoming increasin
 ## Technologies
 * React
 * Tailwind
+* Logic Pro X
+* Canva
 
 ---
 
